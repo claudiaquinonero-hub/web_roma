@@ -1,0 +1,100 @@
+h1 {
+    padding-bottom: 50%;
+}
+
+
+.menu{
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+
+.menu ul li a {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "imperial-script-regular";
+}
+
+
+.menu ul li a:hover {
+    color: rgb(70, 210, 163);
+}
+
+/* FOOTER */
+
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: rgb(97, 23, 23);
+    padding: 45px 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.options {
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.options a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+.contact {
+    margin-top: 31px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 1000px) {
+
+    footer {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        background-color: rgb(206, 187, 223);
+        padding: 45px 30px;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        background-color: rgb(206, 187, 223);
+        padding: 45px 30px;
+        position: relative;
+    }
+}
+
+
+.inicio {
+    background-image: url(MEDIA/img/roma.jpeg);
+    background-size: cover;
+}

@@ -1,12 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
 h1 {
-    padding-bottom: 50%;
+    position: relative;
+    transform: rotate(270deg);
+    display: inline-block;
+    font-size: 155px;
+    padding-top: 180px;
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    left: -170px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, #fff 0%, #ffcc00 100%);
 }
 
 
 .menu{
     padding: 24px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    padding-right: 50px;
 }
 
 
@@ -15,19 +44,33 @@ h1 {
     list-style: none;
     display: flex;
     gap: 24px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: visible;
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 
 .menu ul li a {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "imperial-script-regular";
+    font-size: 20px;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffcc00;
 }
 
 
 .menu ul li a:hover {
     color: rgb(70, 210, 163);
 }
+
+
+
+
 
 /* FOOTER */
 
@@ -95,6 +138,7 @@ footer {
 
 
 .inicio {
-    background-image: url(MEDIA/img/roma.jpeg);
+    background-image: url(MEDIA/img/coliseo.jpg);
     background-size: cover;
+    height: 100vh;
 }

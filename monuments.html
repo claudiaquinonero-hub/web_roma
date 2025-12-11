@@ -21,11 +21,16 @@
 
 <header>
     <nav id="pr-menu" class="menu">
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+        <p onclick="openMenu()">Menú</p>
         <ul>
-            <li><a href="index.html">Página principal</a></li>
-            <li><a href="">Gastronomía</a></li>
-            <li><a href="">Transporte</a></li>
-            <li><a href="">Clima</a></li>
+            <li><a href="index.html" onclick="closeMenu()">Página principal</a></li>
+            <li><a href="" onclick="closeMenu()">Gastronomía</a></li>
+            <li><a href="" onclick="closeMenu()">Transporte</a></li>
+            <li><a href="" onclick="closeMenu()">Clima</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            <p2 onclick="closeMenu()">Volver</p2>
+            </li>
         </ul>
     </nav>
 </header>

@@ -306,3 +306,190 @@ footer .contact p {
     flex-direction: row;
     justify-content: space-around;
 }
+
+
+/* ============================= */
+/*       📱 MOBILE (-768px)      */
+/* ============================= */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 90px;
+        transform: rotate(0deg);
+        text-align: center;
+        padding-top: 100px;
+        left: 0;
+    }
+
+    h2 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    /* Tarjetas actividades */
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjetas {
+        width: 90%;
+    }
+
+    /* Restaurantes */
+    #restaurantes .texto {
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+
+    #restaurantes p {
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .foto1 {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .transporte {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+/* ADAPTACIÓN MEDIA QUERIS MOVIL */
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 90px;
+        transform: rotate(0deg);
+        text-align: center;
+        padding-top: 100px;
+        left: 0;
+    }
+
+    h2 {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    /* Tarjetas actividades */
+    .fotos {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjetas {
+        width: 90%;
+    }
+
+    /* Restaurantes */
+    #restaurantes .texto {
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+
+    #restaurantes p {
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .foto1 {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .transporte {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav .menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+/* ADAPTACIÓN MEDIA QUERIS TABLET */
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    h1 {
+        font-size: 150px;
+        transform: rotate(270deg);
+        left: -100px;
+    }
+
+    h2 {
+        font-size: 80px;
+        text-align: center;
+    }
+
+    /* Tarjetas actividades */
+    .fotos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjetas {
+        width: 90%;
+    }
+
+    /* Restaurantes */
+    #restaurantes .texto {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #restaurantes p {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .foto1 {
+        justify-content: center;
+        gap: 1em;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .transporte {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}

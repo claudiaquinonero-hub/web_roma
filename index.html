@@ -15,18 +15,25 @@
         <div class="inicio">
         <header>
                 <nav id="pr-menu" class="menu">
+                    <i class="fas fa-bars" onclick="openMenu()"></i>
+                    <p onclick="openMenu()">Menú</p>
+                    <ul>
                     <ul>
                         <li>
-                            <a href="">Gastronomía</a>
+                            <a href="" onclick="closeMenu()">Gastronomía</a>
                         </li>
                         <li>
-                            <a href="monuments.html">Monumentos</a>
+                            <a href="monuments.html" onclick="closeMenu()">Monumentos</a>
                         </li>
                         <li>
-                            <a href="">Transporte</a>
+                            <a href="" onclick="closeMenu()">Transporte</a>
                         </li>
                         <li>
-                            <a href="">Clima</a>
+                            <a href="" onclick="closeMenu()">Clima</a>
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                        <p2 onclick="closeMenu()">Volver</p2>
                         </li>
                     </ul>
                 </nav>

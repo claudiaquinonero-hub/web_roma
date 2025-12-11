@@ -1,33 +1,150 @@
-body {
-    font-family: Arial, sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap');
+
+
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+h1 {
+    position: relative;
+    transform: rotate(270deg);
+    display: inline-block;
+    font-size: 230px;
+    padding-top: 300px;
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    left: -170px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, #fff 0%, #ffcc00 100%);
 }
 
-/* MENU */
-header {
-    background: #333;
-    color: white;
-    padding: 10px 0;
+
+.menu{
+    padding: 24px 0;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
 }
 
-header ul {
+
+
+.menu ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+    gap: 24px;
+    background-color: white;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: visible;
+    display: flex;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
-header ul li {
-    margin: 0 20px;
+
+.menu ul li a {
+    font-size: 20px;
+    font-family: "Kedebideri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffcc00;
 }
 
-header ul li a {
-    color: white;
+
+.menu ul li a:hover {
+    color: rgb(70, 210, 163);
+}
+
+
+
+
+
+/* FOOTER */
+
+
+footer {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: rgb(97, 23, 23);
+    padding: 45px 30px;
+    position: relative;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.options {
+    display: flex;
+    justify-content: flex-start;
+    gap: 45px;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.options a {
     text-decoration: none;
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-style: normal;
 }
+
+
+
+.contact {
+    margin-top: 31px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 1000px) {
+
+    footer {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        background-color: rgb(206, 187, 223);
+        padding: 45px 30px;
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 100px;
+        margin-bottom: 50px;
+        background-color: rgb(206, 187, 223);
+        padding: 45px 30px;
+        position: relative;
+    }
+}
+
+
+.inicio {
+    background-image: url(MEDIA/img/coliseo.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
 
 /* ACTIVIDADES */
 .actividades {

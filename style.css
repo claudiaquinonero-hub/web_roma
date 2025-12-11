@@ -1,267 +1,103 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap');
-
-
-
-* {
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    list-style: none;
-}
-h1 {
-    position: relative;
-    transform: rotate(270deg);
-    display: inline-block;
-    font-size: 155px;
-    padding-top: 150px;
-    font-family: "Bowlby One SC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    left: -170px;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to bottom, #fff 0%, #ffcc00 100%);
 }
 
-h2 {
-    font-size: 15px;
-    font-family: "Bowlby One SC", sans-serif;
-    font-weight: 40;
-    font-style: normal;
+/* MENU */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
 }
 
-.menu{
-    padding: 24px 0;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 50px;
-}
-
-
-
-.menu ul {
+header ul {
     list-style: none;
     display: flex;
-    gap: 24px;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    padding: 5px;
-    border-radius: 10px;
-    margin-top: 5px;
-    overflow: visible;
-    display: flex;
-    padding-left: 3%;
-    padding-right: 3%;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
-
-.menu ul li a {
-    font-size: 20px;
-    font-family: "Kedebideri", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #ffcc00;
+header ul li {
+    margin: 0 20px;
 }
 
-
-.menu ul li a:hover {
-    color: rgb(70, 210, 163);
-}
-
-
-
-
-
-/* FOOTER */
-
-
-footer {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    background-color: rgb(97, 23, 23);
-    padding: 45px 30px;
-    position: relative;
-    color: rgb(255, 255, 255);
-}
-
-
-
-.options {
-    display: flex;
-    justify-content: flex-start;
-    gap: 45px;
-    flex-wrap: wrap;
-    justify-content: end;
-}
-
-.options a {
+header ul li a {
+    color: white;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-style: normal;
-}
-
-
-
-.contact {
-    margin-top: 31px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    font-style: normal;
-    color: rgb(255, 255, 255);
-}
-
-
-@media (max-width: 1000px) {
-
-    footer {
-        margin-top: 100px;
-        margin-bottom: 50px;
-        background-color: rgb(206, 187, 223);
-        padding: 45px 30px;
-        position: relative;
-    }
-}
-
-@media (max-width: 768px) {
-    footer {
-        margin-top: 100px;
-        margin-bottom: 50px;
-        background-color: rgb(206, 187, 223);
-        padding: 45px 30px;
-        position: relative;
-    }
-}
-
-
-.inicio {
-    background-image: url(MEDIA/img/coliseo.jpg);
-    background-size: cover;
-    height: 100vh;
-}
-
-/* 1 */
-
-/* ===== GALERÍA 2 EN FORMA DE L ===== */
-
-.galeria2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 columnas */
-  grid-template-rows: auto auto auto; /* 3 filas */
-  gap: 10px;
-  margin-top: 50px;
-  width: 100%;
-}
-
-.galeria2 figure {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Hover y caption (igual que tenías) */
-.galeria2 figcaption {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: "Playfair Display", serif;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.galeria2 figure:hover figcaption {
-  opacity: 1;
-}
-
-/* Todas las imágenes cuadradas (igual que tenías) */
-.galeria2 img {
-  width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  display: block;
-}
-
-/* ===== DISTRIBUCIÓN EN L ===== */
-
-/* 3 verticales a la izquierda */
-.galeria2 figure:nth-child(1) {
-  grid-row: 1 / 2;
-  grid-column: 1 / 2;
-}
-
-.galeria2 figure:nth-child(2) {
-  grid-row: 2 / 3;
-  grid-column: 1 / 2;
-}
-
-.galeria2 figure:nth-child(3) {
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
-}
-
-/* 2 horizontales a la derecha en la última fila */
-.galeria2 figure:nth-child(4) {
-  grid-row: 3 / 4;
-  grid-column: 2 / 3;
-}
-
-
-.galeria2 figure:nth-child(5) {
-  grid-row: 3 / 4;
-  grid-column: 3 / 4;
-}
-
-
-
-/* Monumentos */
-
-
-form {
-    width: 30%;
-    margin: 5% auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.relleno { margin-bottom: 10%; }
-
-.container4 {
-    display: flex;
-    justify-content: center;
-}
-
-.container5 {
-    display: flex;
-    flex-direction: column;
-    width: 5%;
-    margin-top: 5%;
-}
-
-.boton4, .boton5, .boton6 {
-    background-color: rgb(193, 215, 26);
-}
-
-.boton4 {
-    background-color: #fff;
     font-weight: bold;
 }
 
-.boton4:hover,
-.boton4:focus,
-.boton4:active {
-    background-color: rgb(193, 215, 26);
+/* ACTIVIDADES */
+.actividades {
+    padding: 50px 20px;
+    background: #f5f5f5;
+}
+
+.actividades .title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de fotos: 2 filas de 3 tarjetas */
+.fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+}
+
+.tarjetas {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.tarjetas img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.texto {
+    padding: 15px;
+}
+
+.texto h3 {
+    margin: 0 0 10px 0;
+}
+
+/* GRÁFICO */
+section h2 {
+    text-align: center;
+    margin: 30px 0 20px 0;
+}
+
+.grafico-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/* FOOTER */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+footer .contact p {
+    margin: 5px 0;
 }

@@ -1,43 +1,38 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const inputs = document.querySelectorAll('.experiencia-item input[type="number"]');
-    const totalPriceElement = document.getElementById("totalPrice");
-    const buyButton = document.getElementById("buyFood");
+function cargaGraficoBarras() {
 
-    function calculateTotalPrice() {
-        let totalPrice = 0;
+    const datos = {
+        labels: ["10:00", "12:00", "14:00", "16:00", "19:00", "21:00", "23:00"],
+        datasets: [{
+            label: "Afluencia de gente en los monumentos",
+            backgroundColor: "#D81E5B",
+            data: [70, 90, 20, 90, 70, 30, 10]
+        }]
+    };
 
-        inputs.forEach((input) => {
-            const price = parseFloat(input.dataset.price) || 0;
-            const quantity = parseInt(input.value) || 0;
-            totalPrice += price * quantity;
-        });
-
-        totalPriceElement.textContent = totalPrice.toFixed(2) + " €";
-
-        if (totalPrice > 0) {
-            buyButton.classList.remove("disabled");
-            buyButton.disabled = false;
-        } else {
-            buyButton.classList.add("disabled");
-            buyButton.disabled = true;
+    const config = {
+        type: "bar",
+        data: datos,
+        options: {
+            responsive: false, // respetar el tamaño del canvas
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    grid: { display: false },
+                    border: { color: "black", width: 2 }
+                },
+                y: {
+                    min: 0,
+                    max: 50,
+                    title: {
+                        display: true,
+                        text: "Porcentaje de hogares (%)"
+                    },
+                    border: { color: "black", width: 2 }
+                }
+            }
         }
-    }
+    };
 
-    inputs.forEach((input) => {
-        input.addEventListener("input", calculateTotalPrice);
-        input.addEventListener("change", calculateTotalPrice);
-    });
-
-    // Si el botón se pulsa sin seleccionar entradas, muestra aviso
-    buyButton.addEventListener("click", function (event) {
-        const total = parseFloat(totalPriceElement.textContent);
-        if (isNaN(total) || total === 0) {
-            event.preventDefault();
-            alert("Por favor selecciona al menos una entrada antes de continuar.");
-        } else {
-            alert("¡Gracias por tu compra! Total: " + total.toFixed(2) + " €");
-        }
-    });
-
-    calculateTotalPrice();
-});
+    const ctx = document.getElementById("barras").getContext("2d");
+    new Chart(ctx, config);
+}

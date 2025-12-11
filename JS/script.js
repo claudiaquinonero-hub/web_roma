@@ -63,15 +63,11 @@ function shrinkHeader() {
             "height": "3em",
             "background-color": "white"
         });
-        $("h1").css("fontSize", "2em");
-        $("figure").css("opacity", "0");
     } else {
         $("nav").css({
             "height": "7em",
             "background-color": "transparent"
         });
-        $("h1").css("fontSize", "3em");
-        $("figure").css("opacity", "1");
     }
 }
 
